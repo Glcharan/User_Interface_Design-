@@ -1,0 +1,176 @@
+<html>
+<head>    
+    <title>Book My Show</title>
+        <link rel="stylesheet" type="text/css" href="CSS/myStyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jsFile.js"></script>
+
+        <script language="javascript">
+            function ok(){
+                var a=(prompt("enter yes to confirm"))
+                var b="yes"
+                if(a==b){
+                    alert("Thank you, you booking have been confirmed. Have a great day ahead.")
+                }
+            }
+
+            function lossUnsaved(){
+                            window.addEventListener("beforeunload", function (e) {
+                    var confirmationMessage = 'It looks like you have been editing something. '
+                                            + 'If you leave before saving, your changes will be lost.';
+
+                    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+                    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+                });
+            }
+        </script>
+        
+</head>
+<body class="Background">
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="BackG.mp4" type="video/mp4">
+      </video>
+
+    <div>
+            <ul class="Navbar">
+                <li class="logo"><a id="logoText" href="index.html">PSYCHO<span class="logoColr1">Events</span> </a></li>
+                
+                
+                <li><a href="signup.html" >SIGNUP</a></li>
+                <li><a href="Login.html" >LOG IN</a></li> 
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="index.html" class="active">HOME</a> 
+            </ul>
+    </div>
+
+    <div>
+        <ul id="secondaryNavbar">
+            
+            <li class="secondaryNavbar"><a id="logoText" href="events.html">Events</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="food.html">Food & Drink</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="quote.html">Get-a-Quote</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="offers.html">Giftcards</a></li>
+        </ul>
+</div>
+
+<div id="paymentContainer">
+    <table id="paymentTable">
+        <tr>
+            <td class="paymentTd">
+                <img src="images/stand up comedy.avif" width="317px" height="470">
+                
+            </td>
+            <td class="paymentTd1">
+                <h2 id="paymentHead">STAND UP COMEDY</h2>
+                <p>MARCH 18, 2024 <span class="paymentSpan">Length: </span> 1h 50m</p><br>
+                <span class="paymentSpan">Comedy</span><br>
+                <br>
+                <p>IMDb: 5.7/10</p>
+    
+                <br>
+                
+                
+            </td>
+           
+        </tr>
+    </table> 
+    
+    
+    <div class="about3">
+        <h1>About</h1>
+    </div>
+    
+    <div class="about3">
+        <p>Forget your Kal Ki Chinta and Join us in this super funny Show by Ravi Gupta. Kal Ki Chinta Nahi Karta is a new stand-up special by Ravi Gupta.
+        </p>
+        </div>
+    
+        <div class="about3">
+            <h1>Cast</h1>
+        </div>
+    
+        <div class="about3">
+            <p>Ravi Gupta</p>
+        </div>
+    
+        
+        <div class="about3">
+            <h1>Check out showtimes for this Event!</h1>
+        </div>
+    
+        <div class="about3">
+            <span>Date:<input type="date" class="paymentInput" required onclick="lossUnsaved()"> At 
+                <select class="paymentInput">
+                    <option>Platinum:800/-</option>
+                    <option>Gold:650/-</option>
+                    <option>Silver:400/-</option>
+                </select></span>
+                <br>
+                Time: <select class="paymentInput">
+                    <option>2:00pm</option>
+                    <option>4:00pm</option>
+                    <option>6:30pm</option>
+                    <option>9:30pm</option>
+                </select>
+    
+                <br>
+                <br>
+    
+                <button class="paymentInput2" onclick="window.location.href='card.html'">Confirm Payment</button>
+    
+    </div> 
+    <footer class="footer">
+        <div class="container-1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>PSYCHOEvents</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Startups</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Notepad</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">To-Do-List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+    
+    
+    
+    
+    
+    </body>
+    
+    </html>
+    
